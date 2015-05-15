@@ -19,7 +19,7 @@ public class DbInterface {
 		    EmbeddedConfiguration conf = Db4oEmbedded.newConfiguration();			
 			conf.common().objectClass(Movie.class).cascadeOnUpdate(true);
 			conf.common().objectClass(Movie.class).cascadeOnDelete(true);
-			movies = Db4oEmbedded.openFile(conf, "../moviesbd/movies.db4o");	
+			movies = Db4oEmbedded.openFile(conf, "../moviesbd/database/movies.db4o");	
 		
 	}
 		
