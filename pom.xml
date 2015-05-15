@@ -5,52 +5,43 @@
 	<artifactId>moviesbd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>moviesdbmaven</name>
-
+	
 	<repositories>
-
 		<repository>
 			<id>sonatype-forge</id>
 			<url>https://repository.sonatype.org/content/groups/forge/</url>
 		</repository>
-
 		<repository>
 			<id>Spark repository</id>
 			<url>http://www.sparkjava.com/nexus/content/repositories/spark/</url>
 		</repository>
-
 		<repository>
 			<id>central</id>
 			<url>http://repo1.maven.org/maven2/</url>
 		</repository>
-
 	</repositories>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>com.db4o</groupId>
 			<artifactId>db4o-core-java5</artifactId>
 			<version>8.0.184.15484</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.sparkjava</groupId>
 			<artifactId>spark-core</artifactId>
 			<version>1.1.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
 			<version>1.7.5</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
 			<version>20140107</version>
 		</dependency>
-
 	</dependencies>
 
 	<build>
@@ -67,7 +58,6 @@
 			</plugin>
 
 			<plugin>
-
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.2.1</version>
@@ -88,9 +78,5 @@
 				</executions>
 			</plugin>
 		</plugins>
-
-
-
-
 	</build>
 </project>
