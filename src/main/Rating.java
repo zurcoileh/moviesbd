@@ -1,17 +1,17 @@
 package main;
 
 public class Rating {
-	
+
 	private String rate;
 	private double grade;
 	private int qtVotes;
-	
+
 	public Rating(String rt) {
 		this.rate = rt;
 		this.grade = 0;
 		this.qtVotes = 0;
 	}
-	
+
 	public String getRate() {
 		return rate;
 	}
@@ -30,10 +30,10 @@ public class Rating {
 	public void setQtVotes(int qtVotes) {
 		this.qtVotes = qtVotes;
 	}
-	
+
 	public String toString(){
 		return rate;
 	}
-	
+
 
 }

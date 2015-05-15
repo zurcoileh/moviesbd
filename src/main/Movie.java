@@ -8,7 +8,7 @@ public class Movie {
 	private int year;
 	private Rating rating;
 	private Espec esp;
-	
+
 	public Movie(int id, double dur, String tit, int y, Espec es, Rating rt){
 		idMovie = id;
 		duration = dur;
@@ -17,59 +17,38 @@ public class Movie {
 		rating = rt;
 		esp = es;
 	}
-	
-	//constructor without arguments
-	public Movie (){
-		
-	}	
-
 
 	public double getDuration() {
 		return duration;
 	}
 
-
-
 	public void setDuration(double duration) {
 		this.duration = duration;
 	}
-
 
 	public String getTitle() {
 		return title;
 	}
 
-
-
 	public void setTitle(String title) {
 		this.title = title;
 	}
-
-
 
 	public int getYear() {
 		return year;
 	}
 
-
-
 	public void setYear(int year) {
 		this.year = year;
 	}
-
-
 
 	public Espec getEsp() {
 		return esp;
 	}
 
-
-
 	public void setEsp(Espec esp) {
 		this.esp = esp;
 	}
-
-
 
 	public String toString(){
 		return idMovie+" | "+title+" | "+year+" | "+rating+" | "+duration+" | "+esp;
@@ -82,7 +61,7 @@ public class Movie {
 	public void setIdMovie(int idMovie) {
 		this.idMovie = idMovie;
 	}
-	
+
 	public Rating getRating() {
 		return rating;
 	}
@@ -93,13 +72,13 @@ public class Movie {
 
 	//metodo de comparação para busca
 	public boolean contains(String palavra){
-			
-			if(title.contains(palavra)) return true;
-		    if(rating.getRate().contains(palavra))  return true;		
-		    if(esp.getGender().toString().contains(palavra)) return true;
-		    if(esp.getStudio().contains(palavra)) return true;	        
-					
-			return false;
+
+		if(title.contains(palavra)) return true;
+		if(rating.getRate().contains(palavra))  return true;		
+		if(esp.getGender().toString().contains(palavra)) return true;
+		if(esp.getStudio().contains(palavra)) return true;	        
+
+		return false;
 	}	
 
 }
