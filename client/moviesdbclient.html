@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Movies db</title>	
-	<meta charset="utf-8"> 	
-	<script src="/js/jquery.js"></script> 
-	<script src="/js/main.js"></script>	
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<head>
+<title>Movies db</title>
+<meta charset="utf-8">
+<script src="js/jquery.js"></script>
+<script src="js/main.js"></script>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href='http://fonts.googleapis.com/css?family=Lato'
+	rel='stylesheet' type='text/css'>
 </head>
-  <body>   
-   <center><img src="img/logo.jpeg" alt="movies" style="width:304px;height:228px"></center>
-   <h3>MOVIES DB</h3>	
-   <div id="panel">
-   <form class="panel" action="" method="post" align="center">        	
-		<p>
-		<input class= "textbox"type="text"  name="search" placeholder="Enter here the info for searching..." id="keyword"  size=55%>
-		<input class= "search" type="button" value="search" name="teste"  id="search"> &nbsp <input class= "search" type="button" value="new" name="newmovie"  id="new"></p>
-		<input type="radio" name="searchkey" value="gender" id="gender">Gender
-		<input type="radio" name="searchkey" value="studio" id="studio">Studio 
-		<br><br>		
-	</form></div>	
+<body>
+	<img src="img/logo.jpeg" alt="movies"
+		style="width: 304px; height: 228px">
+	<h3>MOVIES DB</h3>
+	<div id="panel">
+		<form class="panel" action="" method="post">
+			<p>
+				<input class="textbox" type="text" name="search"
+					placeholder="Enter here the info for searching..." id="keyword"
+					size=55%> <input class="search" type="button"
+					value="search" name="teste" id="search"> &nbsp <input
+					class="search" type="button" value="new" name="newmovie" id="new">
+			</p>
+			<input type="radio" name="searchkey" value="gender" id="gender">Gender
+			<input type="radio" name="searchkey" value="studio" id="studio">Studio
+			<br> <br>
+		</form>
+	</div>
 	<div id="foo" class="tb"></div>
-	<div id="bar" class="del" style="display:none;" ><center>
-	<p><input class="b" type='button' value='back' id='prev' style="padding-left:10px">&nbsp&nbsp&nbsp
-	<input class="b" type='button' value='delete'  id='delete' >&nbsp&nbsp&nbsp	 
-	<input class="b" type='button' value='save' id='save'>
-	</center></div>
-  </body>
+	<div id="bar" class="del" style="display: none;">
+		<p>
+			<input class="b" type='button' value='back' id='prev'
+				style="padding-left: 10px">&nbsp&nbsp&nbsp <input class="b"
+				type='button' value='delete' id='delete'>&nbsp&nbsp&nbsp <input
+				class="b" type='button' value='save' id='save'>
+	</div>
+</body>
 </html>
